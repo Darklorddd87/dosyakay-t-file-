@@ -36,3 +36,15 @@ model kısmında IFormFile? olarak değiştirin resim olarak direk kayıt için
       burda cop yalayarak dosya kayıt 
        k.KapakFoto=dosyaAdi;
        bura ad kayıt 
+        if(k.Resim!=null)
+        {
+        string kokDizini=Directory.GetCurrentDirectory();
+         string kayitDizini=Path.Combine(kokDizini,"wwwrot","resim")
+         string dosyaAdi=Guid.NewGuid+Path.GetExtension(k.Resim.FileName);
+            var tamYol=Path.Combine(kayitDizini,dosyaAdi);
+            var dosyaAkisi=new FileStream(tamYol,FileMode.Create)
+             k.Resim.CopyTo(dosyaAkisi);
+      burda cop yalayarak dosya kayıt 
+       k.KapakFoto=dosyaAdi;
+         
+        
