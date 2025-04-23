@@ -4,14 +4,19 @@ input type kısmı ne file diyerek bilgisayardan dosya yüklemeyi yapıyoruz
 form kısmına ise kayıt veri yolu işlemi için
 enctype="multipart/form-data"
 model kısmında IFormFile? olarak değiştirin resim olarak direk kayıt için 
-   [NotMapped] bu alanın veri tabınında olmuyacağı yer
+
+   [NotMapped] 
+   
+   bu alanın veri tabınında olmuyacağı yer
    
    çünkü dosya klasöre kayıt edilir
+   
  if(k.Resim!=null)
  
  eğer boş değilse seçilibirşey varsa
  
    string kokDizini=Directory.GetCurrentDirectory();
+   
    bu komut çalışma klasörünü bulur.
    
    programın çalıştığı ana dizin (C:\User\Fatih\Desktop\KutuphaneMVC
