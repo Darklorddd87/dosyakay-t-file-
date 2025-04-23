@@ -36,6 +36,8 @@ model kısmında IFormFile? olarak değiştirin resim olarak direk kayıt için
       burda cop yalayarak dosya kayıt 
        k.KapakFoto=dosyaAdi;
        bura ad kayıt 
+
+       
         if(k.Resim!=null)
         {
         string kokDizini=Directory.GetCurrentDirectory();
